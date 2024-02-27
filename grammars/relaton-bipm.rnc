@@ -11,7 +11,8 @@ DocumentType =
 "working-party-note" |
 "strategy" |
 "cipm-mra" |
-"resolution"
+"resolution" |
+"policy"
 
 editorialgroup = element editorialgroup {
   committee+,

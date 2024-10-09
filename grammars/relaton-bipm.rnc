@@ -27,8 +27,7 @@ structuredidentifier = element structuredidentifier {
 
 BibDataExtensionType =
   attribute schema-version { text }?,
-    doctype?, docsubtype?, editorialgroup, comment-period?, si-aspect?, meeting-note?, structuredidentifier
-
+    doctype?, docsubtype?, flavor, editorialgroup, comment-period?, si-aspect?, meeting-note?, structuredidentifier
 }
 
 comment-period = element comment-period {

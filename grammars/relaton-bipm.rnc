@@ -25,9 +25,13 @@ structuredidentifier = element structuredidentifier {
   element appendix { text }?
 }
 
-BibDataExtensionType =
-  attribute schema-version { text }?,
-    doctype?, docsubtype?, flavor, editorialgroup, comment-period?, si-aspect?, meeting-note?, structuredidentifier
+BibDataExtensionType &=
+        ## Period during which comments are allowed on the document draft
+        comment-period?, 
+        ## The domain of SI covered by the document; used to select logo in PDF cover page. The logo nominates one primary SI base units, and defining consonants for that unit and possibly others as well
+        si-aspect?, 
+        ## Note on when and where a guide was adopted
+        meeting-note?
 }
 
 comment-period = element comment-period {

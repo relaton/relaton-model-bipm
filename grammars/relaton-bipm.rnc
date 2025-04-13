@@ -25,6 +25,8 @@ structuredidentifier = element structuredidentifier {
   element appendix { text }?
 }
 
+}
+
 BibDataExtensionType &=
         ## Period during which comments are allowed on the document draft
         comment-period?, 
@@ -32,7 +34,6 @@ BibDataExtensionType &=
         si-aspect?, 
         ## Note on when and where a guide was adopted
         meeting-note?
-}
 
 comment-period = element comment-period {
 element from { ISO8601Date },
